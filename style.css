@@ -100,7 +100,7 @@ hr {
 
 .social-icons li {
   list-style-type: none;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .recent-work ul li {
@@ -130,7 +130,8 @@ hr {
 
 .social-icons {
   display: flex;
-  margin: 70px 110px 30px 110px;
+  justify-content: center;
+  margin: 60px 0 30px 0;
 }
 
 .language p {
@@ -145,7 +146,7 @@ hr {
 
 .arrow {
   display: flex;
-  margin: 20px 143px;
+  justify-content: center;
 }
 
 .arrow p {
@@ -188,8 +189,8 @@ hr {
 .recent-work3 {
   background-image: url(./images/recent3.png);
   background-repeat: no-repeat;
-  background-position: top 197px right 157px;
-  background-size: 221px;
+  background-position: top 189px left -7px;
+  background-size: 269px;
 }
 
 .recent-work4 {
@@ -229,6 +230,7 @@ hr {
   border: hidden;
 }
 
+/* button syle */
 .btn {
   height: 50px;
   width: 95px;
@@ -243,22 +245,23 @@ hr {
   color: #fff;
 }
 
-/* .btn:enabled {
-  background: #172b4d;
+.btn:enabled {
+  background: #7d73fc;
   color: #fff;
 }
 
 .btn:hover {
   background-color: #fff;
   border: 1px solid #172b4d;
-  color: #acb7c3;
+  color: #7d73fc;
+  cursor: pointer;
 }
 
 .btn:active {
-  background: #172b4d;
+  background: #7d73fc;
   color: #fff;
 }
-*/
+
 .contact h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -282,6 +285,7 @@ hr {
   color: #f5f5ff;
 }
 
+/* form style */
 .input-details {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -320,9 +324,9 @@ textarea {
   width: 90%;
 }
 
-.contact .btn {
-  align-items: center;
-  margin: 10px 20px 76px 132px;
+.terminal-button {
+  text-align: center;
+  margin: 10px 0 70px 0;
 }
 
 .contact hr {
