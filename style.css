@@ -179,7 +179,7 @@ hr {
 .recent-work1 {
   background-image: url(./images/recent.png);
   background-repeat: no-repeat;
-  background-position: top -52px left -49px;
+  background-position: top -106px left -73px;
   background-size: 280px;
 }
 
@@ -360,6 +360,21 @@ textarea {
   margin: 10px auto;
 }
 
+@media (min-width: 768px) {
+  .tech {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 10px 10px;
+    margin: 10px 12px 10px 42px;
+  }
+
+  .work h1 {
+    text-align: center;
+  }
+}
+
+/* desktop style */
 @media (min-width: 1024px) {
   .my-info .harmburger {
     display: none;
@@ -395,6 +410,20 @@ textarea {
 
   .tech {
     background-image: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 10px 10px;
+    margin: 10px 12px 10px 42px;
+  }
+
+  .tech ul {
+    align-items: center;
+    text-align: center;
+    margin-right: 35px;
+  }
+
+  .tech li {
+    padding: 20px 0 10px 15px;
   }
 
   .front-page p {
@@ -414,12 +443,12 @@ textarea {
   .box {
     width: 665px;
     height: 372.6px;
-    margin: 60px 24px;
+    margin: 30px 24px;
   }
 
   .multi-post {
     width: 570px;
-    padding-top: 78px;
+    padding-top: 48px;
   }
 
   .work h1 {
