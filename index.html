@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Template4</title>
+    <title>Abiodun Portfolio Template4</title>
     <link    rel="stylesheet"    href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"    />    <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"    /><!-- font awesome icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <header class="my-info">
         <nav>
             <a href="#" class="name">Abiodun</a>
-            <a href="#" class="harmburger">&#9776;</a>
+            <a href="#" class="harmburger" id="hamburger">&#9776;</a>
             <ul>
                 <li><a>Portfolio</a></li>
                 <li><a>About</a></li>
@@ -25,7 +25,7 @@
         </nav>
     </header>
 
-    <section>
+    <section id="about">
         <div class="section-one">
             <div class="front-page1">
                 <div class="front-page">
@@ -84,7 +84,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="portfolio">
         <div class="work">
             <h1>MY RECENT WORK</h1>
             <hr>
@@ -111,11 +111,6 @@
             <div class="recent-work">
                 <div class="recent-work2">
                     <div class="box"></div>
-                        <p>A daily selection of privately personalized reads; 
-                            no accounts or sign-ups required. has been the industry's 
-                            standard dummy text ever since the 1500s, 
-                            when an unknown printer took a standard dummy text.
-                        </p>
                     <div class="multi-post">
                         <h2>Multi-Post Stories</h2>
                         <p>A daily selection of privately personalized reads; 
@@ -176,7 +171,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
         <div class="contact">
             <div class="contacts-us">
                 <h2>CONTACT US</h2>
@@ -189,13 +184,13 @@
                 a feature that you need built or a project that needs coding. 
                 I’d love to help with it 
             </p>
-            <form action="https://formspree.io/f/xpzbdbeq" method="post">
+            <form action="https://formspree.io/f/xpzbdbeq" method="post" id="form">
                 <ul class="form">
                     <li class="input-details">
                         <input type="text" placeholder="Abiodun" aria-label="Name" maxlength="30" required>
                     </li>
                     <li class="input-details">
-                        <input type="email" placeholder="raheemabiodun23@gmail.com" aria-label="Email" required>
+                        <input type="email" placeholder="raheemabiodun23@gmail.com" id="email" aria-label="Email" required>
                     </li>
                     <li class="text-area">
                         <textarea name="Enter-text" cols="41" rows="5" placeholder="Enter text here" aria-label="Mesaage" maxlength="500" required></textarea>
@@ -204,6 +199,7 @@
                 <div class="terminal-button">
                     <button name="button" type="submit" class="btn">Get in touch</button>
                 </div>
+                <div id="error"></div>
             </form>
             <hr>
             <div class="social">
@@ -223,5 +219,24 @@
             </div>
         </div>
     </section>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-ul">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <ul class="mobile-hr">
+            <li><a class="link" href="#portfolio">Portfolio</a></li>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </ul>
+          <ul class="mobile-hr">
+            <li><a class="link" href="#about">About</a></li>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </ul>
+          <ul class="mobile-hr">
+            <li><a class="link" href="#contact">Contact</a></li>
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </ul>
+        </div>
+      </div>
+      <script src="text.js"></script>
 </body>
 </html>

@@ -37,6 +37,63 @@ body {
   background-position: top -20px left 0;
 }
 
+/* mobile-menu style */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  background: #191765;  
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 86px 96px 106px 0;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+}
+
+.mobile-menu li {
+  margin: 30px 0 0 15px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.mobile-hr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-hr span {
+  color: #fff;
+  margin: 46px 25px 10px 2px;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 50px;
+  left: 326px;
+  top: 8px;
+  color: #67798e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#error {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
 .front-page h1 {
   color: #7d73fc;
   font-size: 48px;
