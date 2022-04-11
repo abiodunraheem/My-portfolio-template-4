@@ -32,3 +32,30 @@ form.addEventListener('submit', (submitForm) => {
     submitForm.preventDefault();
   }
 });
+
+// const person = {
+//   age: 35,
+//   name: 'John',
+// }
+// const {age,name} = person;
+// console.log(age)
+const fullName = document.getElementById('name');
+const message = document.getElementById('message');
+form.addEventListener('submit', function(e) {
+  const formData = {
+    fullName: fullName.value,
+    email: email.value,
+    message: message.value,  
+  }
+  localStorage.setItem('myFormData', JSON.stringify(formData))
+  // console.log(formData.firstName, formData.email, formData.message, e)
+})
+function getData() {
+  const {fullName} = JSON.parse(localStorage.getItem('myFormData'));
+  const {email} = JSON.parse(localStorage.getItem('myFormData'));
+  const {message} = JSON.parse(localStorage.getItem('myFormData'));
+  document.getElementById('name').value = fullName;
+  document.getElementById('email').value = email;
+  document.getElementById('message').value = message;
+}
+window.addEventListener('load', getData);
