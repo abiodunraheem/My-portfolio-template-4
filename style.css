@@ -5,6 +5,7 @@
 
 body {
   background: #191765;
+  overflow-x: hidden;
 }
 
 /* header style */
@@ -417,6 +418,81 @@ textarea {
   margin: 10px auto;
 }
 
+.mobile-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.16);
+  height: 726px;
+  margin: 20px 20px 10px 20px;
+  padding-top: 30px;
+  width: 90%;
+}
+
+.mobile-popup h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 44px;
+  font-size: 32px;
+  color: #fff;
+  padding-left: 24px;
+}
+
+.mobile-popup p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  padding: 14px 10px 14px 24px;
+}
+
+.mobile-popup .popup-image img {
+  margin:  10px 12px 10px 24px;
+}
+
+.mobile-popup ul {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.mobile-popup ul li {
+  list-style-type: none;
+  padding: 10px 12px 10px 12px;
+  border: 1px solid #81818c;
+  color: #fff;
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.popup-button1 button {
+  margin: 10px;
+  height: 43px;
+}
+
+.popup-button2 button {
+  margin: 10px;
+  height: 43px;
+  width: 118px;
+  /* width: 90px; */
+}
+
+.popup-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2px 40px 2px 40px;
+  align-items: center;
+}
+
+@media (max-width: 320px) {
+  .mobile-popup .popup-image img {
+    width: 250px;
+  }
+}
+
 @media (min-width: 768px) {
   .tech {
     background-image: none;
@@ -429,6 +505,35 @@ textarea {
   .work h1 {
     text-align: center;
   }
+
+  .mobile-popup .popup-image img {
+    width: 734px;
+    height: 348px;
+  }
+
+  .mobile-popup {
+    width: 80%;
+    margin: 12px 67px 10px 80px;
+    align-items: center;
+  }
+
+  .mobile-popup p {
+    width: 451px;
+  }
+
+  .popup-btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-button2 button {
+    width: 120px;
+  }
+
+  .popup-button1 button {
+    width: 120px;
+  }
+
 }
 
 /* desktop style */
