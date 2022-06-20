@@ -419,6 +419,7 @@ textarea {
 }
 
 .mobile-popup {
+  display: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -476,7 +477,6 @@ textarea {
   margin: 10px;
   height: 43px;
   width: 118px;
-  /* width: 90px; */
 }
 
 .popup-btn {
@@ -488,6 +488,10 @@ textarea {
 }
 
 @media (max-width: 320px) {
+  .mobile-popup {
+    display: none;
+  }
+
   .mobile-popup .popup-image img {
     width: 250px;
   }
@@ -512,6 +516,7 @@ textarea {
   }
 
   .mobile-popup {
+    display: none;
     width: 80%;
     margin: 12px 67px 10px 80px;
     align-items: center;

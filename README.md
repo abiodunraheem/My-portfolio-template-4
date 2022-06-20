@@ -27,9 +27,7 @@
 
 - GitHub: [@githubhandle](https://github.com/abiodunraheem)
 - Twitter: [@twitterhandle](https://twitter.com/@abiodunraheem23)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/abiodun-raheem-908b33154)
-
-👤 **Author**
+- LinkedIn: [LinkedIn](https://linkedin.com/in/abiodun-raheem)
 
 ## 🤝 Contributing
 
